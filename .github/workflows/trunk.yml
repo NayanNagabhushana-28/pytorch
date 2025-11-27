@@ -6,6 +6,7 @@ on:
       - main
       - release/*
       - landchecks/*
+      - test-runner/*
     tags:
       - ciflow/trunk/*
   workflow_dispatch:
