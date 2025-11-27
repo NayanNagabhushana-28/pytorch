@@ -73,3 +73,4 @@ self-hosted-runner:
     - macos-14-xlarge
     # Organization-wide Intel hosted XPU runners
     - linux.idc.xpu
+    - h200-test-runner
