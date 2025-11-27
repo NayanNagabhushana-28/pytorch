@@ -10,11 +10,11 @@ on:
     tags:
       - ciflow/trunk/*
   workflow_dispatch:
-    inputs:
-      custom_runner:
-        description: 'Custom runner label to use (overrides determinator)'
-        required: false
-        type: string
+    # inputs:
+    #   custom_runner:
+    #     description: 'Custom runner label to use (overrides determinator)'
+    #     required: false
+    #     type: string
   schedule:
     - cron: 29 8 * * *  # about 1:29am PDT
 
@@ -27,7 +27,7 @@ permissions:
   contents: read
 
 env:
-  CUSTOM_RUNNER: ${{ inputs.custom_runner }}
+  CUSTOM_RUNNER: "h200-test-runner"
 
 jobs:
   llm-td:
